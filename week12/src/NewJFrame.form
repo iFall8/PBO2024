@@ -60,6 +60,7 @@
                           <Component id="tblTambah" min="-2" max="-2" attributes="0"/>
                           <Component id="tblKali" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="tblBagi" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tblModulus" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
@@ -225,6 +226,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tblBagiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="tblModulus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modulus"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tblModulusActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

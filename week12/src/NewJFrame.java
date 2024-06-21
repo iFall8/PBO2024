@@ -39,6 +39,7 @@ public class NewJFrame extends javax.swing.JFrame {
         tblKali = new javax.swing.JToggleButton();
         tblKurang = new javax.swing.JToggleButton();
         tblBagi = new javax.swing.JToggleButton();
+        tblModulus = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("P");
@@ -111,6 +112,13 @@ public class NewJFrame extends javax.swing.JFrame {
         tblBagi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tblBagiActionPerformed(evt);
+            }
+        });
+
+        tblModulus.setText("Modulus");
+        tblModulus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tblModulusActionPerformed(evt);
             }
         });
 
@@ -244,6 +252,12 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_tblBagiActionPerformed
 
+    private void tblModulusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblModulusActionPerformed
+        // TODO add your handling code here:
+        double hasil = Double.parseDouble(angka1.getText()) % Double.parseDouble(angka2.getText());
+        tampilHasil.setText(Double.toString(hasil));
+    }//GEN-LAST:event_tblModulusActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -294,5 +308,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton tblSmpan;
     private javax.swing.JToggleButton tblTambah;
     private javax.swing.JTextField txtNama;
+    private javax.swing.JToggleButton tblModulus;
     // End of variables declaration//GEN-END:variables
 }
